@@ -5,11 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>f8-project-03</title>
         <!-- favicon -->
-        <link
-            rel="apple-touch-icon"
-            sizes="57x57"
-            href="./assets/favicon"
-        />
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
         <link
             rel="apple-touch-icon"
             sizes="60x60"
@@ -76,7 +72,10 @@
         />
         <link rel="manifest" href="./assets/favicon/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
         <meta name="theme-color" content="#ffffff" />
         <!-- embed font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -89,5 +88,77 @@
         <link rel="stylesheet" href="/assets/css/resets.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <div class="container">
+                <!-- header-top -->
+                <div class="header-top">
+                    <!-- Logo -->
+                    <a href="/">
+                        <div class="logo">
+                            <span class="logo__circle"></span>
+                            <span class="logo__text">
+                                <span class="logo__branch">Shine</span>
+                                <span class="logo__branch logo__branch--small"
+                                    >smile</span
+                                >
+                            </span>
+                        </div>
+                    </a>
+                    <!-- navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a
+                                    href=""
+                                    class="nav__link navbar__link--active"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="nav__link">Services</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="nav__link">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="nav__link">Doctors</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- ACTION -->
+                    <div class="header-action">
+                        <a href="#!" class="header-action__login">Log in</a>
+                        <button href="#!" class="btn header-action__signup">
+                            Sign up
+                        </button>
+                    </div>
+                </div>
+                <!-- hero -->
+                <section class="hero">
+                    <!-- Hero content -->
+                    <section class="hero__content">
+                        <h1 class="hero__heading">
+                            Exceptional dental care for all ages.
+                        </h1>
+                        <p class="hero__desc">
+                            Exceptional dental care for all ages. Your great
+                            smile begins with a great dentist.
+                        </p>
+                        <div class="hero__row">
+                            <a href="#!" class="btn">Book online</a>
+                            <span class="hero__phone">or call (123) 456-7890</span>
+                        </div>
+                    </section>
+                    <!-- Hero-media -->
+                    <div class="hero__media">
+                        <figure class="hero__images">
+                            <img src="/assets/img/hero-01.jpg" alt="" class="hero__img" />
+                            <img src="/assets/img/hero-02.jpg" alt="" class="hero__img" />
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        </header>
+    </body>
 </html>
