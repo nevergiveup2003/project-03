@@ -420,8 +420,42 @@ a {
     background-color: #fff;
     transition: 0.25s;
 }
-.member__control-btn:hover{
+.member__control-btn:hover {
     color: #fff;
-    border-color: #2E80CE;
-    background: #2E80CE;
+    border-color: #2e80ce;
+    background: #2e80ce;
+}
+/* INSTALL */
+.install {
+    margin-top: 180px;
+}
+.install__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    border-radius: 4px;
+    background-color: #2e80ce;
+}
+.install__img {
+    display: block;
+    margin-top: -95px;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+}
+.instal__content {
+    max-width: 586px;
+}
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+.install__heading {
+    max-width: 489px;
+}
+.install__row{
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
 }
