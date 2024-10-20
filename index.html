@@ -87,6 +87,12 @@
         <!-- resets.css -->
         <link rel="stylesheet" href="/assets/css/resets.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
+
+        <!-- link animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- HERDER -->
@@ -139,7 +145,7 @@
                 <section class="hero">
                     <!-- Hero content -->
                     <section class="hero__content">
-                        <h1 class="hero__heading">
+                        <h1 class="hero__heading" data-aos="fade-right">
                             Exceptional dental care for all ages.
                         </h1>
                         <p class="hero__desc">
@@ -160,11 +166,13 @@
                                 src="/assets/img/hero-01.jpg"
                                 alt=""
                                 class="hero__img"
+                                data-aos="flip-left"
                             />
                             <img
                                 src="/assets/img/hero-02.jpg"
                                 alt=""
                                 class="hero__img"
+                                data-aos="flip-right"
                             />
                         </figure>
                     </div>
@@ -188,6 +196,7 @@
                                 src="/assets/img/hero-01.jpg"
                                 alt=""
                                 class="service__img"
+                                data-aos="fade-down-right"
                             />
                         </figure>
                         <div>
@@ -338,7 +347,12 @@
                 <div class="container">
                     <div class="feature__iner">
                         <div class="feature__media">
-                            <figure class="feature__images">
+                            <figure
+                                class="feature__images"
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                            >
                                 <img
                                     src="/assets/img/hero-02.jpg"
                                     alt=""
@@ -351,7 +365,7 @@
                                 />
                             </figure>
                         </div>
-                        <section class="feature__content">
+                        <section class="feature__content" data-aos="zoom-in">
                             <h2 class="section-heading">
                                 Take back your smile with shine.
                             </h2>
@@ -761,22 +775,32 @@
                             Dental care
                         </p>
                         <form class="footer-form" action="">
-                            <input class="footer-form__input"
+                            <input
+                                class="footer-form__input"
                                 type="email"
                                 name="email"
                                 id="email"
                                 placeholder="Enter your email"
                             />
-                            <button class="btn footer-form__submit" type="submit">
+                            <button
+                                class="btn footer-form__submit"
+                                type="submit"
+                            >
                                 Subscribe
                             </button>
                         </form>
                     </div>
                 </div>
                 <div class="footer__copyright">
-                    <p class="footer__copyright-text">2021 GDN. Copyright and All rights reserved.</p>
+                    <p class="footer__copyright-text">
+                        2021 GDN. Copyright and All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
